@@ -1,0 +1,133 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 400ms ease-in-out;
+  z-index: 999;
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-to-top button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #052a4c 0%, #0d3d61 100%);
+  color: #ffffff;
+  border: 2px solid #ffa500;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(5, 42, 76, 0.3);
+  transition: all 300ms ease;
+  font-size: 20px;
+  padding: 0;
+  line-height: 1;
+}
+
+.scroll-to-top button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(5, 42, 76, 0.4);
+  background: linear-gradient(135deg, #0d3d61 0%, #052a4c 100%);
+  border-color: #ff9500;
+}
+
+.scroll-to-top button:active {
+  transform: translateY(-2px);
+}
+
+.scroll-to-top svg {
+  width: 24px;
+  height: 24px;
+  stroke: #ffa500;
+  transition: stroke 300ms ease;
+}
+
+.scroll-to-top button:hover svg {
+  stroke: #ff9500;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .scroll-to-top {
+    bottom: 35px;
+    right: 25px;
+  }
+
+  .scroll-to-top button {
+    width: 45px;
+    height: 45px;
+  }
+
+  .scroll-to-top svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Mobile - Small screen */
+@media (max-width: 768px) {
+  .scroll-to-top {
+    bottom: 30px;
+    right: 20px;
+  }
+
+  .scroll-to-top button {
+    width: 48px;
+    height: 48px;
+    border-width: 2px;
+  }
+
+  .scroll-to-top svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 480px) {
+  .scroll-to-top {
+    bottom: 20px;
+    right: 15px;
+  }
+
+  .scroll-to-top button {
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 2px 8px rgba(5, 42, 76, 0.25);
+  }
+
+  .scroll-to-top button:hover {
+    box-shadow: 0 4px 16px rgba(5, 42, 76, 0.35);
+  }
+
+  .scroll-to-top svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Very Small Mobile */
+@media (max-width: 360px) {
+  .scroll-to-top {
+    bottom: 15px;
+    right: 12px;
+  }
+
+  .scroll-to-top button {
+    width: 42px;
+    height: 42px;
+    border-width: 1.5px;
+  }
+
+  .scroll-to-top svg {
+    width: 18px;
+    height: 18px;
+  }
+}

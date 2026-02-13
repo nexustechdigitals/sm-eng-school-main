@@ -1,0 +1,985 @@
+.curriculum-page {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.curriculum-hero {
+  background: linear-gradient(135deg, #ffa500 0%, #ff8c00 100%);
+  color: white;
+  padding: 30px;
+  text-align: center;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.curriculum-hero-content {
+  flex: 1;
+  text-align: left;
+}
+
+.curriculum-hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+  padding-left: 30px;
+}
+
+.curriculum-hero-content p {
+  font-size: 18px;
+  font-weight: 300;
+  opacity: 0.95;
+  padding-left: 30px;
+  line-height: 1.6;
+}
+
+.curriculum-hero-logo {
+  flex: 0 0 auto;
+  display: flex;
+  padding-right: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.curriculum-hero-logo img {
+  width: 280px;
+  height: 280px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+}
+
+/* Main Section */
+.curriculum-section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.curriculum-section h2 {
+  font-size: 36px;
+  color: #052a4c;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.curriculum-section h3 {
+  font-size: 24px;
+  color: #052a4c;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.curriculum-section h4 {
+  font-size: 16px;
+  color: #ffa500;
+  margin-bottom: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Overview Section */
+.curriculum-overview {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  margin-bottom: 60px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border-left: 4px solid #ffa500;
+}
+
+.curriculum-overview h2 {
+  margin-bottom: 20px;
+}
+
+.overview-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #4b5563;
+  text-align: center;
+}
+
+/* Curriculum Levels */
+.curriculum-levels {
+  margin-bottom: 80px;
+}
+
+.levels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.level-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #ffa500;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.level-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.level-card h3 {
+  margin-bottom: 8px;
+}
+
+.level-description {
+  font-size: 14px;
+  color: #ffa500;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.level-section {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.level-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.subjects-list,
+.highlights-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.subjects-list li,
+.highlights-list li {
+  font-size: 14px;
+  color: #4b5563;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.subjects-list li:before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #ffa500;
+  font-weight: bold;
+}
+
+.highlights-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #10b981;
+  font-weight: bold;
+}
+
+/* Teaching Methodology */
+.teaching-methodology {
+  margin-bottom: 80px;
+}
+
+.method-intro {
+  font-size: 16px;
+  color: #4b5563;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.pedagogy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.pedagogy-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pedagogy-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.pedagogy-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.pedagogy-card h4 {
+  color: #052a4c;
+  text-transform: capitalize;
+  letter-spacing: normal;
+  margin-bottom: 10px;
+}
+
+.pedagogy-card p {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* Learning Outcomes */
+.learning-outcomes {
+  background: linear-gradient(135deg, #f0f9ff 0%, #fff7ed 100%);
+  padding: 50px 30px;
+  border-radius: 12px;
+  margin-bottom: 80px;
+}
+
+.learning-outcomes h2 {
+  margin-bottom: 40px;
+  color: #052a4c;
+}
+
+.outcomes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.outcome-item {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  border-left: 4px solid #ffa500;
+}
+
+.outcome-item h4 {
+  color: #052a4c;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  letter-spacing: normal;
+}
+
+.outcome-item p {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* Co-Curricular Activities */
+.co-curricular {
+  margin-bottom: 80px;
+}
+
+.co-curr-intro {
+  font-size: 16px;
+  color: #4b5563;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.activity-category {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.activity-category h4 {
+  color: #ffa500;
+  margin-bottom: 15px;
+}
+
+.activity-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.activity-category li {
+  font-size: 14px;
+  color: #4b5563;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.activity-category li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ffa500;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Assessment & Evaluation */
+.assessment {
+  margin-bottom: 80px;
+}
+
+.assessment-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.method-item {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border-top: 3px solid #ffa500;
+}
+
+.method-item h4 {
+  color: #052a4c;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  letter-spacing: normal;
+}
+
+.method-item p {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* Special Programs */
+.special-programs {
+  margin-bottom: 80px;
+}
+
+.programs-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.program-item {
+  background: linear-gradient(135deg, #fff7ed 0%, #fef2f2 100%);
+  padding: 30px;
+  border-radius: 12px;
+  border-left: 4px solid #ffa500;
+  transition: transform 0.3s ease;
+}
+
+.program-item:hover {
+  transform: translateX(5px);
+}
+
+.program-item h4 {
+  color: #052a4c;
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 600;
+}
+
+.program-item p {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* Support Systems */
+.support-systems {
+  margin-bottom: 80px;
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.support-item {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.support-item h4 {
+  color: #ffa500;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  letter-spacing: normal;
+}
+
+.support-item p {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.curriculum-cta {
+  background: linear-gradient(135deg, #ffa500 0%, #ff8c00 100%);
+  color: white;
+  padding: 60px 30px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.curriculum-cta h2 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.curriculum-cta p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  opacity: 0.95;
+}
+
+.cta-button {
+  display: inline-block;
+  background: white;
+  color: #ffa500;
+  padding: 15px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .curriculum-section {
+    padding: 60px 15px;
+  }
+
+  .curriculum-hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .curriculum-hero-content {
+    text-align: center;
+  }
+
+  .curriculum-hero-content h1 {
+    font-size: 36px;
+  }
+
+  .curriculum-hero-logo img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .levels-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .pedagogy-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .outcomes-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .programs-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .curriculum-section {
+    padding: 30px 14px;
+  }
+
+  .curriculum-hero {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 14px;
+    margin-top: 60px;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .curriculum-hero-content {
+    flex: 1;
+    text-align: center;
+    width: 100%;
+  }
+
+  .curriculum-hero-content h1 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    padding-left: 0;
+    letter-spacing: -0.3px;
+  }
+
+  .curriculum-hero-content p {
+    font-size: 14px;
+    padding-left: 0;
+    line-height: 1.6;
+  }
+
+  .curriculum-hero-logo {
+    flex: 0 0 auto;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .curriculum-hero-logo img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .curriculum-section h2 {
+    font-size: 22px;
+    margin-bottom: 24px;
+  }
+
+  .curriculum-section h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .curriculum-section h4 {
+    font-size: 14px;
+  }
+
+  .curriculum-overview {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  .overview-text {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .levels-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .level-card {
+    padding: 18px;
+    border-radius: 10px;
+  }
+
+  .level-description {
+    font-size: 12px;
+  }
+
+  .subjects-list li,
+  .highlights-list li {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  .pedagogy-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .pedagogy-card {
+    padding: 18px;
+    text-align: center;
+  }
+
+  .pedagogy-icon {
+    font-size: 40px;
+  }
+
+  .pedagogy-card h4 {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .pedagogy-card p {
+    font-size: 12px;
+  }
+
+  .learning-outcomes {
+    padding: 24px 14px;
+    margin-bottom: 40px;
+  }
+
+  .learning-outcomes h2 {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  .outcomes-container {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .outcome-item {
+    padding: 16px;
+    border-left: 3px solid #ffa500;
+  }
+
+  .outcome-item h4 {
+    font-size: 14px;
+  }
+
+  .co-curr-intro,
+  .method-intro {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .activities-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .activity-category {
+    padding: 18px;
+  }
+
+  .activity-category h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .activity-category li {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  .assessment-methods {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .method-item {
+    padding: 18px;
+  }
+
+  .method-item h4 {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .method-item p {
+    font-size: 12px;
+  }
+
+  .programs-list {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .program-item {
+    padding: 18px;
+  }
+
+  .program-item h4 {
+    font-size: 14px;
+  }
+
+  .program-item p {
+    font-size: 12px;
+  }
+
+  .curriculum-cta {
+    padding: 24px 14px;
+  }
+
+  .curriculum-cta h2 {
+    font-size: 20px;
+  }
+
+  .cta-button {
+    padding: 10px 28px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .curriculum-page {
+    overflow-x: hidden;
+  }
+
+  .curriculum-section {
+    padding: 18px 10px;
+  }
+
+  .curriculum-hero {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 10px;
+    margin-top: 50px;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .curriculum-hero-content {
+    flex: 1;
+    text-align: center;
+    width: 100%;
+  }
+
+  .curriculum-hero-content h1 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    padding-left: 0;
+    letter-spacing: -0.2px;
+    font-weight: 700;
+  }
+
+  .curriculum-hero-content p {
+    font-size: 12px;
+    padding-left: 0;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+
+  .curriculum-hero-logo {
+    flex: 0 0 auto;
+    padding-right: 0;
+  }
+
+  .curriculum-hero-logo img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .curriculum-section h2 {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+
+  .curriculum-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .curriculum-section h4 {
+    font-size: 13px;
+  }
+
+  .curriculum-overview {
+    padding: 14px;
+    margin-bottom: 24px;
+    border-left: 3px solid #ffa500;
+  }
+
+  .overview-text {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .levels-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .level-card h3 {
+    font-size: 15px;
+  }
+
+  .level-description {
+    font-size: 11px;
+  }
+
+  .level-section {
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+  }
+
+  .subjects-list li,
+  .highlights-list li {
+    font-size: 11px;
+    margin-bottom: 5px;
+    padding-left: 16px;
+  }
+
+  .pedagogy-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .pedagogy-card {
+    padding: 14px;
+    text-align: center;
+    border-radius: 8px;
+  }
+
+  .pedagogy-icon {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+
+  .pedagogy-card h4 {
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+
+  .pedagogy-card p {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+  .outcomes-container {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .outcome-item {
+    background: white;
+    padding: 12px;
+    border-left: 3px solid #ffa500;
+    border-radius: 6px;
+  }
+
+  .outcome-item h4 {
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+
+  .outcome-item p {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+  .learning-outcomes {
+    background: linear-gradient(135deg, #f0f9ff 0%, #fff7ed 100%);
+    padding: 16px 10px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+  }
+
+  .learning-outcomes h2 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .method-intro,
+  .co-curr-intro {
+    font-size: 12px;
+    margin-bottom: 16px;
+    line-height: 1.5;
+  }
+
+  .activities-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .activity-category {
+    padding: 14px;
+    border-radius: 8px;
+  }
+
+  .activity-category h4 {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  .activity-category ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .activity-category li {
+    font-size: 11px;
+    margin-bottom: 5px;
+    padding-left: 16px;
+  }
+
+  .assessment-methods {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .method-item {
+    padding: 14px;
+    border-radius: 8px;
+    border-top: 2px solid #ffa500;
+  }
+
+  .method-item h4 {
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+
+  .method-item p {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+  .programs-list {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .program-item {
+    padding: 14px;
+    border-radius: 8px;
+    border-left: 3px solid #ffa500;
+  }
+
+  .program-item h4 {
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+
+  .program-item p {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+  .curriculum-cta {
+    padding: 16px 10px;
+    margin-top: 20px;
+  }
+
+  .curriculum-cta h2 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .cta-button {
+    padding: 8px 20px;
+    font-size: 12px;
+  }
+}
