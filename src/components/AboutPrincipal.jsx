@@ -1,5 +1,5 @@
 import "../styles/AboutPrincipal.css";
-import prince from "../assets/img/priciple2.png";
+import prince from "../assets/img/priciple24.png";
 import md from "../assets/img/md.webp";
 
 

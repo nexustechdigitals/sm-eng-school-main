@@ -5,13 +5,12 @@ import logo from "../assets/img/logo.png";
 
 function Footer() {
   const mapQuery =
-    "SM Campus, Sector 12, Navi Mumbai, Maharashtra 400703";
+    "Harvate pada, Shiv sena Office, Dhaniv Baug, Nalasopara East, Nala Sopara, Dhaniv, Maharashtra 401208";
   // Embed URL using exact place name and coordinates from the correct Google Maps place
-  const mapsEmbedUrl = "https://www.google.com/maps?q=SM+English+High+School+%26+Jr.+College,+19.4372913,72.8533131&z=17&output=embed";
+  const mapsEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.4368577584964!2d72.8526672!3d19.436723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a9000fcda36b%3A0x871edf55638668c7!2sSM%20ENGLISH%20HIGH%20SCHOOL!5e0!3m2!1sen!2sin!4v1771044751172!5m2!1sen!2sin";
   // Direct Google Maps place URL provided by user
   const mapsLinkUrl =
-    "https://www.google.com/maps/place/Arya+English+High+School+%26+Jr.+College/@19.4372913,72.8507382,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7a998c18c85db:0x52f02f5c6503a819!8m2!3d19.4372913!4d72.8533131!16s%2Fg%2F11ty7f502l?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D";
-
+"https://maps.app.goo.gl/PfoPDN6uciuKomr57";
   return (
     <footer className="footer" id="footer">
       <div className="footer-wrapper">
@@ -34,7 +33,7 @@ function Footer() {
             <h4>Contact</h4>
             <div className="contact-info-inline">
               <p>
-                <strong>Phone:</strong> +91 72084666822
+                <strong>Phone:</strong> +91 72084 66822
               </p>
               <p>
                 <strong>Email:</strong> info@smhighschool.com
@@ -47,7 +46,7 @@ function Footer() {
               </p>
               <div className="social-links">
   <a
-    href="https://wa.me/917208466682"
+    href="https://wa.me/+917208466822"
     title="WhatsApp"
     target="_blank"
     rel="noreferrer noopener"
@@ -57,7 +56,7 @@ function Footer() {
   </a>
 
   <a
-    href="https://youtube.com/@aryaenglishhighschool"
+    href="https://youtube.com/@sameer_mahto?si=x0Uh6iBoEFN1Ht-7"
     title="YouTube"
     target="_blank"
     rel="noreferrer noopener"
@@ -67,7 +66,7 @@ function Footer() {
   </a>
 
   <a
-    href="https://www.instagram.com/arya_english_high_school"
+    href="https://www.instagram.com/sm_english_high_school?igsh=dXZkNTJhNjQzbGxv"
     title="Instagram"
     target="_blank"
     rel="noreferrer noopener"
@@ -77,10 +76,10 @@ function Footer() {
   </a>
 
   <a
-  href="mailto:aryaenglishschool@gmail.com"
+  href="mailto:mahtosoni81@gmail.com"
   onClick={(e) => {
     e.preventDefault();
-    window.location.href = "mailto:aryaenglishschool@gmail.com";
+    window.location.href = "mailto:mahtosoni81@gmail.com";
   }}
   title="Email"
   aria-label="Email"
@@ -124,11 +123,18 @@ function Footer() {
       </div>
 
       {/* Footer Bottom */}
-      <div className="footer-bottom">
-        <p className="copyright">
-          © 2025 SM English High School & Junior College. All rights reserved.
-        </p>
-      </div>
+    <a 
+  href="https://nexustechdigitals.netlify.app/" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  style={{ textDecoration: 'none' }} // Prevents default underline on the whole div
+>
+  <div className="footer-bottom" style={{ cursor: 'pointer' }}>
+    <p className="copyright">
+      Designed & Developed by NEXUX. <br></br>Click here for inquiries regarding your website.
+    </p>
+  </div>
+</a>
     </footer>
   );
 }

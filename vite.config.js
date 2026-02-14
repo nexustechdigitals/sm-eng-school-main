@@ -58,6 +58,8 @@ export default defineConfig({
     assetsInlineLimit: 4096,
   },
   server: {
+    host: true, // Ye line Network IP ko expose karegi
+    port: 5173, // Aap chahein toh port change bhi kar sakte hain
     // Enable compression during dev
     middlewareMode: false,
     // Hot module replacement
