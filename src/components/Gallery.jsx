@@ -24,35 +24,40 @@ import Event2 from "../assets/img/F&A/even2.jpg";
 // import Event3 from "../assets/img/F&A/even3.jpg";
 // import Event4 from "../assets/img/F&A/even4.jpg";
 
+// import pre1 from "../assets/img/F&A/pre1.jpg";
+// import pre2 from "../assets/img/F&A/pre2.jpg";
+// import pre3 from "../assets/img/F&A/pre3.jpg";
+// import pre4 from "../assets/img/F&A/pre4.jpg";
+
 import logo from "../assets/img/logo.png";
 
 
-const galleryCategories = [
-  {
-    id: "tinyTots",
-    label: "Tiny Tots",
-    icon: "🎨",
-    description: "Play-based learning and creative exploration"
-  },
-  {
-    id: "Practicals",
-    label: "Science Lab",
-    icon: "🔬",
-    description: "Hands-on science experiments and learning"
-  },
-  {
-    id: "sports",
-    label: "Sports",
-    icon: "⚽",
-    description: "Athletic activities and games"
-  },
-  {
-    id: "events",
-    label: "Events",
-    icon: "🎉",
-    description: "School celebrations and programs"
-  }
-];
+// const galleryCategories = [
+//   {
+//     id: "tinyTots",
+//     label: "Tiny Tots",
+//     icon: "🎨",
+//     description: "Play-based learning and creative exploration"
+//   },
+//   {
+//     id: "Practicals",
+//     label: "Science Lab",
+//     icon: "🔬",
+//     description: "Hands-on science experiments and learning"
+//   },
+//   {
+//     id: "sports",
+//     label: "Sports",
+//     icon: "⚽",
+//     description: "Athletic activities and games"
+//   },
+//   {
+//     id: "events",
+//     label: "Events",
+//     icon: "🎉",
+//     description: "School celebrations and programs"
+//   }
+// ];
 
 const galleryData = {
   
@@ -141,6 +146,28 @@ const galleryData = {
         description: "Prize distribution honoring student achievements."
       }
     ]
+  },
+
+  prePrimary: {
+    title: "Pre-Primary Activities",
+    images: [
+      {
+        url: logo,
+        description: "Dance performances by talented students on annual day."
+      },
+      {
+        url: logo,
+        description: "Musical ensembles featuring vocals and instruments."
+      },
+      {
+        url: logo,
+        description: "Stage dramas highlighting creativity and teamwork."
+      },
+      {
+        url: logo,
+        description: "Prize distribution honoring student achievements."
+      }
+    ]
   }
 };
 
@@ -151,7 +178,8 @@ function Gallery() {
     { id: "Practicals", label: "Science Lab", icon: "🔬" },
     { id: "cultural", label: "Cultural", icon: "🎭" },
     { id: "annualSports", label: "Sports", icon: "⚽" },
-    { id: "annualFunction", label: "Events", icon: "🎉" }
+    { id: "annualFunction", label: "Events", icon: "🎉" },
+    { id: "prePrimary", label: "Primary", icon: "Pre-" }
   ];
 
   const currentData = galleryData[activeSection];

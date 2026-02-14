@@ -14,14 +14,14 @@ import teacher6 from "../assets/img/Teachers/teacher1.jpg";
 const faculty = [
   { 
     name: "Miss Urmila Yadav", 
-    role: "Hindi Teacher",
-    description: "Experienced Hindi teacher with a years of teaching expertise.",
+    role: "Marathi Teacher",
+    description: "Experienced Marathi teacher with a years of teaching expertise.",
     image: teacher1
   },
   { 
     name: "Miss Sarita Singh", 
-    role: "Marathi Teacher",
-    description: "Passionate Marathi educator dedicated to fostering language skills and cultural appreciation.",
+    role: "Hindi Teacher",
+    description: "Passionate Hindi educator dedicated to fostering language skills and cultural appreciation.",
     image: teacher2
   },
   { 

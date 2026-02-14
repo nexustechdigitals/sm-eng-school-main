@@ -66,34 +66,59 @@ function Testimonials() {
   // Show only first 6 testimonials
   const displayTestimonials = testimonials.slice(0, 6);
   // Duplicate testimonials for infinite loop animation
-  const infiniteTestimonials = [...displayTestimonials, ...displayTestimonials];
+const infiniteTestimonials = [
+  ...displayTestimonials,
+  ...displayTestimonials
+];
 
   return (
-    <section className="testimonials-section">
-      <div className="testimonials-header">
-        <h2>Reviews</h2>
-        <p className="testimonials-subtitle">Don't ignore negative feedback. Address it professionally and try to resolve the issue.</p>
+    // <section className="testimonials-section">
+    //   <div className="testimonials-header">
+    //     <h2>Reviews</h2>
+    //     <p className="testimonials-subtitle">Don't ignore negative feedback. Address it professionally and try to resolve the issue.</p>
+    //   </div>
+
+    //   <div className="testimonials-carousel">
+    //     <div className="carousel-track">
+    //       {infiniteTestimonials.map((t, i) => (
+    //         <div key={i} className="testimonial-card">
+    //           <div className="testimonial-image">
+    //             <img src={t.image} alt={t.name} />
+    //           </div>
+    //           <div className="testimonial-content">
+    //             <div className="quote-icon">"</div>
+    //             <p className="testimonial-experience">{t.experience}</p>
+    //             <h3 className="testimonial-name">{t.name}</h3>
+    //             <p className="testimonial-relation">{t.relation}</p>
+    //             <StarRating rating={t.rating} />
+    //           </div>
+    //         </div>
+    //       ))}
+    //     </div>
+    //   </div>
+    // </section>
+
+    <div className="testimonials-grid">
+  {displayTestimonials.map((t, i) => (
+    <div key={i} className="testimonial-card">
+      <div className="testimonial-image">
+        <img src={t.image} alt={t.name} />
       </div>
 
-      <div className="testimonials-carousel">
-        <div className="carousel-track">
-          {infiniteTestimonials.map((t, i) => (
-            <div key={i} className="testimonial-card">
-              <div className="testimonial-image">
-                <img src={t.image} alt={t.name} />
-              </div>
-              <div className="testimonial-content">
-                <div className="quote-icon">"</div>
-                <p className="testimonial-experience">{t.experience}</p>
-                <h3 className="testimonial-name">{t.name}</h3>
-                <p className="testimonial-relation">{t.relation}</p>
-                <StarRating rating={t.rating} />
-              </div>
-            </div>
-          ))}
-        </div>
+      <div className="testimonial-content">
+        <h3 className="testimonial-name">{t.name}</h3>
+        <p className="testimonial-relation">{t.relation}</p>
+
+        <StarRating rating={t.rating} />
+
+        <p className="testimonial-experience">
+          {t.experience}
+        </p>
       </div>
-    </section>
+    </div>
+  ))}
+</div>
+
   );
 }
 

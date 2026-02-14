@@ -10,6 +10,9 @@ import Testimonials from "./components/Testimonials.jsx";
 import Footer from "./components/Footer.jsx";
 import Gallery from "./components/Gallery.jsx";
 import Curriculum from "./components/Curriculum.jsx";
+import Activities from "./components/Activities";
+import Rankers from "./components/Rankers";
+
 import "./styles.css";
 
 function Home() {
@@ -19,8 +22,10 @@ function Home() {
       <HeroSlider />
       <WhoWeAre />
       <AboutPrincipal />
+      <Activities />
       <WhyChooseUs />
       <Faculty />
+      {/* <Rankers /> */}
       <Testimonials />
       <Footer />
     </>
