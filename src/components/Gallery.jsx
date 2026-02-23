@@ -3,183 +3,208 @@ import "../styles/Gallery.css";
 import Header from "./Header";
 import Footer from "./Footer";
 
-// School Logo
-import Sci1 from "../assets/img/logo.png";
-import Sci2 from "../assets/img/logo.png";
-import Sci3 from "../assets/img/logo.png";
-import Sci4 from "../assets/img/logo.png";
-
+// Cultural images
 import Cul1 from "../assets/img/F&A/cul1.jpg";
 import Cul2 from "../assets/img/F&A/cul2.jpg";
 import Cul3 from "../assets/img/F&A/cul3.jpg";
 import Cul4 from "../assets/img/F&A/cul4.jpg";
 
+// Sports images
 import Sports1 from "../assets/img/F&A/spo1.jpg";
 import Sports2 from "../assets/img/F&A/spo2.jpg";
 import Sports3 from "../assets/img/F&A/spo3.jpg";
 import Sports4 from "../assets/img/F&A/spo4.jpg";
 
+// Events images
 import Event1 from "../assets/img/F&A/even1.jpg";
 import Event2 from "../assets/img/F&A/even2.jpg";
-// import Event3 from "../assets/img/F&A/even3.jpg";
-// import Event4 from "../assets/img/F&A/even4.jpg";
+import Event3 from "../assets/img/F&A/even3.jpeg";
+import Event4 from "../assets/img/F&A/even4.jpeg";
 
-// import pre1 from "../assets/img/F&A/pre1.jpg";
-// import pre2 from "../assets/img/F&A/pre2.jpg";
-// import pre3 from "../assets/img/F&A/pre3.jpg";
-// import pre4 from "../assets/img/F&A/pre4.jpg";
+// Educational Trip images
+import EduTrip1 from "../assets/img/F&A/edu_trip.jpeg";
+import EduTrip2 from "../assets/img/F&A/edu_trip1.jpeg";
+import EduTrip3 from "../assets/img/F&A/edu_trip2.jpeg";
+
+// Pre-Primary images
+import PrePrime1 from "../assets/img/F&A/pre_prime2.jpeg";
+import PrePrime2 from "../assets/img/F&A/pre_prime8.jpeg";
+import PrePrime3 from "../assets/img/F&A/pre_prime9.jpeg";
+import PrePrime4 from "../assets/img/F&A/pre_prime6.jpeg";
 
 import logo from "../assets/img/logo.png";
 
-
-// const galleryCategories = [
-//   {
-//     id: "tinyTots",
-//     label: "Tiny Tots",
-//     icon: "🎨",
-//     description: "Play-based learning and creative exploration"
-//   },
-//   {
-//     id: "Practicals",
-//     label: "Science Lab",
-//     icon: "🔬",
-//     description: "Hands-on science experiments and learning"
-//   },
-//   {
-//     id: "sports",
-//     label: "Sports",
-//     icon: "⚽",
-//     description: "Athletic activities and games"
-//   },
-//   {
-//     id: "events",
-//     label: "Events",
-//     icon: "🎉",
-//     description: "School celebrations and programs"
-//   }
-// ];
-
 const galleryData = {
-  
-  Practicals: {
-    title: "Science Practicals",
+  eduTrip: {
+    title: "EDUCATIONAL TRIP",
+    badge: "🚌 Exploration",
+    badgeClass: "badge-green",
     images: [
       {
-        url: logo,
-        description: "Physics experiments with equipment learn with fun and curiosity."
+        url: EduTrip1,
+        subtitle: "Nature Walk",
+        description: "Students exploring nature and the world beyond the classroom on exciting educational trips.",
+        layout: "hero"
       },
       {
-        url: logo,
-        description: "Physics practicals that turn concepts into real-world observations."
+        url: EduTrip2,
+        subtitle: "Historical Sites",
+        description: "Learning through travel — visiting historical monuments and places of interest.",
+        layout: "tall"
       },
       {
-        url: logo,
-        description: "Biology lab sessions using microscopes and specimen study."
+        url: EduTrip3,
+        subtitle: "Group Excursion",
+        description: "Building teamwork, curiosity, and real-world knowledge through educational excursions.",
+        layout: "wide"
       },
       {
-        url: logo,
-        description: "Students collaborating on experiments to learn scientific method."
+        url: EduTrip1,
+        subtitle: "Discovery Learning",
+        description: "Students gaining hands-on experience and inspiration outside the school walls.",
+        layout: "normal"
       }
     ]
   },
-  
+
   cultural: {
     title: "CULTURAL ACTIVITY",
+    badge: "🎭 Creative Arts",
+    badgeClass: "badge-purple",
     images: [
       {
         url: Cul1,
-        description: "Dance rehearsals that build rhythm, expression, and confidence."
+        subtitle: "Dance Performance",
+        description: "Dance rehearsals that build rhythm, expression, and stage confidence.",
+        layout: "hero"
       },
       {
         url: Cul2,
-        description: "Art showcases where students display painting and craft work."
+        subtitle: "Art Showcase",
+        description: "Art showcases where students display painting and craft work.",
+        layout: "normal"
       },
       {
         url: Cul3,
-        description: "Leaders with team to build confidence and leadership skills."
+        subtitle: "Leadership",
+        description: "Leaders building confidence and teamwork through cultural events.",
+        layout: "wide"
       },
       {
         url: Cul4,
-        description: "National Days celebrations with flag hoisting and cultural performances."
+        subtitle: "National Day",
+        description: "National Day celebrations with flag hoisting and cultural performances.",
+        layout: "tall"
       }
     ]
   },
+
   annualSports: {
     title: "ANNUAL SPORTS",
+    badge: "⚽ Sports",
+    badgeClass: "badge-orange",
     images: [
       {
         url: Sports1,
-        description: "Kabbadi tournament that builds teamwork and sportsmanship."
+        subtitle: "Kabbadi",
+        description: "Kabbadi tournament that builds teamwork and sportsmanship among students.",
+        layout: "tall-hero"
       },
       {
         url: Sports2,
-        description: "Chess tournament that builds strategic thinking and problem solving."
+        subtitle: "Chess",
+        description: "Chess tournament that builds strategic thinking and problem solving.",
+        layout: "normal"
       },
       {
         url: Sports3,
-        description: "Kho-kho tournament that builds teamwork and sportsmanship."
+        subtitle: "Kho-Kho",
+        description: "Kho-kho tournament that builds teamwork and sportsmanship.",
+        layout: "wide"
       },
       {
         url: Sports4,
-        description: "Medal ceremonies celebrating athletic achievements."
+        subtitle: "Medal Ceremony",
+        description: "Medal ceremonies celebrating athletic achievements and excellence.",
+        layout: "normal"
       }
     ]
   },
-  
+
   annualFunction: {
     title: "ANNUAL FUNCTION",
+    badge: "🎉 Celebration",
+    badgeClass: "badge-pink",
     images: [
       {
         url: Event1,
-        description: "Dance performances by talented students on annual day."
+        subtitle: "Dance Night",
+        description: "Dance performances by talented students on annual day celebrations.",
+        layout: "wide-hero"
       },
       {
         url: Event2,
-        description: "Musical ensembles featuring vocals and instruments."
+        subtitle: "Music Ensemble",
+        description: "Musical ensembles featuring vocals and instruments.",
+        layout: "normal"
       },
       {
-        url: logo,
-        description: "Stage dramas highlighting creativity and teamwork."
+        url: Event3,
+        subtitle: "Stage Drama",
+        description: "Stage dramas and skits highlighting creativity and teamwork.",
+        layout: "wide"
       },
       {
-        url: logo,
-        description: "Prize distribution honoring student achievements."
+        url: Event4,
+        subtitle: "Prize Distribution",
+        description: "Prize distribution ceremony honoring student achievements.",
+        layout: "normal"
       }
     ]
   },
 
   prePrimary: {
-    title: "Pre-Primary Activities",
+    title: "PRE-PRIMARY ACTIVITIES",
+    badge: "🎨 Early Learning",
+    badgeClass: "badge-blue",
     images: [
       {
-        url: logo,
-        description: "Dance performances by talented students on annual day."
+        url: PrePrime1,
+        subtitle: "Creative Play",
+        description: "Play-based learning where tiny tots explore creativity and imagination.",
+        layout: "hero"
       },
       {
-        url: logo,
-        description: "Musical ensembles featuring vocals and instruments."
+        url: PrePrime2,
+        subtitle: "Motor Skills",
+        description: "Fun activities that build motor skills and social confidence.",
+        layout: "normal"
       },
       {
-        url: logo,
-        description: "Stage dramas highlighting creativity and teamwork."
+        url: PrePrime3,
+        subtitle: "Storytelling",
+        description: "Nurturing young minds through guided play and storytelling sessions.",
+        layout: "normal"
       },
       {
-        url: logo,
-        description: "Prize distribution honoring student achievements."
+        url: PrePrime4,
+        subtitle: "Joyful Learning",
+        description: "Colorful events that celebrate the joy of early childhood learning.",
+        layout: "wide"
       }
     ]
   }
 };
 
 function Gallery() {
-  const [activeSection, setActiveSection] = useState("Practicals");
+  const [activeSection, setActiveSection] = useState("eduTrip");
 
   const sections = [
-    { id: "Practicals", label: "Science Lab", icon: "🔬" },
+    { id: "eduTrip", label: "Educational Trip", icon: "🚌" },
     { id: "cultural", label: "Cultural", icon: "🎭" },
     { id: "annualSports", label: "Sports", icon: "⚽" },
     { id: "annualFunction", label: "Events", icon: "🎉" },
-    { id: "prePrimary", label: "Primary", icon: "Pre-" }
+    { id: "prePrimary", label: "Pre-Primary", icon: "🎨" }
   ];
 
   const currentData = galleryData[activeSection];
@@ -188,23 +213,24 @@ function Gallery() {
     <div className="gallery-page">
       <Header />
       <section className="gallery-section">
+
+        {/* ── Page Header ── */}
         <div className="gallery-header">
           <div className="gallery-header-content">
-            <h1 className="gallery-title">Facilities And Activities</h1>
+            <h1 className="gallery-title">Facilities &amp; Activities</h1>
             <p className="gallery-subtitle">Explore moments from our vibrant school community</p>
           </div>
           <div className="gallery-header-logo">
             <img src={logo} alt="School Logo" />
           </div>
         </div>
-        
+
+        {/* ── Tab Navigation ── */}
         <div className="gallery-nav">
           {sections.map((section) => (
             <button
               key={section.id}
-              className={`gallery-nav-btn ${
-                activeSection === section.id ? "active" : ""
-              }`}
+              className={`gallery-nav-btn ${activeSection === section.id ? "active" : ""}`}
               onClick={() => setActiveSection(section.id)}
             >
               <span className="nav-icon">{section.icon}</span>
@@ -213,28 +239,35 @@ function Gallery() {
           ))}
         </div>
 
-        <div className="gallery-content">
-          <div className="section-header">
-            <h2 className="section-title">{currentData.title}</h2>
-          </div>
-          <div className="gallery-grid">
+        {/* ── Bento Grid Content ── */}
+        <div className="gallery-content" key={activeSection}>
+
+          <div className={`bento-grid bento-grid--${activeSection}`}>
             {currentData.images.map((item, index) => (
-              <div key={index} className="gallery-card">
-                <div className="gallery-image-wrapper">
+              <div
+                key={index}
+                className={`bento-card bento-card--${item.layout} bento-card--idx-${index}`}
+              >
+                <div className="bento-img-wrap">
                   <img
                     src={item.url}
-                    alt={currentData.title}
-                    className="gallery-image"
+                    alt={item.subtitle}
+                    className="bento-img"
                   />
+                  <div className="bento-img-overlay" />
                 </div>
-                <div className="gallery-card-content">
-                  <span className="card-number">{String(index + 1).padStart(2, '0')}</span>
-                  <h3 className="card-title">{currentData.title}</h3>
-                  <p className="gallery-description">{item.description}</p>
+
+                <div className="bento-body">
+                  <span className={`bento-badge ${currentData.badgeClass}`}>
+                    {currentData.badge}
+                  </span>
+                  <h3 className="bento-card-title">{item.subtitle}</h3>
+                  <p className="bento-card-desc">{item.description}</p>
                 </div>
               </div>
             ))}
           </div>
+
         </div>
       </section>
       <Footer />
@@ -243,4 +276,3 @@ function Gallery() {
 }
 
 export default Gallery;
-
