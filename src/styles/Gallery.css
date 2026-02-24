@@ -163,7 +163,7 @@
   /* natural height → no crop */
   max-height: 420px;
   /* cap very tall images so layout stays sane */
-  object-fit: contain;
+  object-fit: cover;
   /* show 100% of image */
   display: block;
   transition: transform 0.45s ease;
