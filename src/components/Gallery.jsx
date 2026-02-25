@@ -42,14 +42,14 @@ const galleryData = {
     images: [
       {
         url: EduTrip1,
-        subtitle: "Nature Walk",
+        subtitle: "Picnic Walk",
         description: "Students exploring nature and the world beyond the classroom on exciting educational trips.",
         layout: "hero"
       },
       {
         url: EduTrip2,
-        subtitle: "Historical Sites",
-        description: "Learning through travel — visiting historical monuments and places of interest.",
+        subtitle: "Group Trip",
+        description: "Learning through travel — visiting places of interest.",
         layout: "tall"
       },
       {
@@ -60,8 +60,8 @@ const galleryData = {
       },
       {
         url: EduTrip1,
-        subtitle: "Discovery Learning",
-        description: "Students gaining hands-on experience and inspiration outside the school walls.",
+        subtitle: "Discovery Walk",
+        description: "Students gainin hands-on experience and inspiration outside the school walls.",
         layout: "normal"
       }
     ]
@@ -74,14 +74,14 @@ const galleryData = {
     images: [
       {
         url: Cul1,
-        subtitle: "Dance Performance",
-        description: "Dance rehearsals that build rhythm, expression, and stage confidence.",
+        subtitle: "Saraswati Puja",
+        description: "Celebration of knowledge and learning, honoring the goddess of wisdom and education.",
         layout: "hero"
       },
       {
         url: Cul2,
-        subtitle: "Art Showcase",
-        description: "Art showcases where students display painting and craft work.",
+        subtitle: "Group Event",
+        description: "Students showcasing their talents and creativity through cultural events and performances.",
         layout: "normal"
       },
       {
@@ -92,8 +92,8 @@ const galleryData = {
       },
       {
         url: Cul4,
-        subtitle: "National Day",
-        description: "National Day celebrations with flag hoisting and cultural performances.",
+        subtitle: "Exercise & Fitness",
+        description: "Students engaging in physical activities and fitness programs that promote health and well-being.",
         layout: "tall"
       }
     ]
@@ -106,26 +106,26 @@ const galleryData = {
     images: [
       {
         url: Sports1,
-        subtitle: "Kabbadi",
-        description: "Kabbadi tournament that builds teamwork and sportsmanship among students.",
+        subtitle: "Cricket Turf",
+        description: "Cricket matches that build teamwork and sportsmanship among students.",
         layout: "tall-hero"
       },
       {
         url: Sports2,
-        subtitle: "Chess",
-        description: "Chess tournament that builds strategic thinking and problem solving.",
+        subtitle: "Long Jump",
+        description: "Long jump competitions that build agility and athletic performance.",
         layout: "normal"
       },
       {
         url: Sports3,
-        subtitle: "Kho-Kho",
-        description: "Kho-kho tournament that builds teamwork and sportsmanship.",
+        subtitle: "Shot Put",
+        description: "Shot put competitions that build strength and coordination.",
         layout: "wide"
       },
       {
         url: Sports4,
-        subtitle: "Medal Ceremony",
-        description: "Medal ceremonies celebrating athletic achievements and excellence.",
+        subtitle: "Running Race Competition",
+        description: "Students competing in running races that build endurance and competitive spirit.",
         layout: "normal"
       }
     ]
@@ -138,14 +138,14 @@ const galleryData = {
     images: [
       {
         url: Event1,
-        subtitle: "Dance Night",
-        description: "Dance performances by talented students on annual day celebrations.",
+        subtitle: "School Function",
+        description: "school functions that celebrate student achievements and foster a sense of community.",
         layout: "wide-hero"
       },
       {
         url: Event2,
-        subtitle: "Music Ensemble",
-        description: "Musical ensembles featuring vocals and instruments.",
+        subtitle: "Prize Distribution",
+        description: "Celebrating student achievements with a prize distribution ceremony.",
         layout: "normal"
       },
       {
@@ -156,8 +156,8 @@ const galleryData = {
       },
       {
         url: Event4,
-        subtitle: "Prize Distribution",
-        description: "Prize distribution ceremony honoring student achievements.",
+        subtitle: "Food Stalls",
+        description: "Students enjoying delicious food and drinks at school events.",
         layout: "normal"
       }
     ]
@@ -182,14 +182,14 @@ const galleryData = {
       },
       {
         url: PrePrime3,
-        subtitle: "Storytelling",
-        description: "Nurturing young minds through guided play and storytelling sessions.",
+        subtitle: "Krishna Janmashtami",
+        description: "Festive celebrations that introduce young learners to cultural traditions and joy.",
         layout: "normal"
       },
       {
         url: PrePrime4,
-        subtitle: "Joyful Learning",
-        description: "Colorful events that celebrate the joy of early childhood learning.",
+        subtitle: "Projector Learning",
+        description: "Interactive projector-based learning that engages young minds in a fun and educational way.",
         layout: "wide"
       }
     ]

@@ -27,7 +27,7 @@ const faculty = [
   { 
     name: " Miss Vandana Singh", 
     role: "Mother Teacher",
-    description: "Literature expert focused on communication and writing skills development.",
+    description: "For Preschool and Kindergarten, nurturing young minds with care and creativity.",
     image: teacher3
   },
   { 

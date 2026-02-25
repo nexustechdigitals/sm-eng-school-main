@@ -8,14 +8,14 @@ import eduTrip from "../assets/img/F&A/edu_trip.jpeg";
 const activitiesData = [
   {
     id: 1,
-    title: "EDUCATIONAL TRIP",
-    description: "Students explore the world beyond classrooms through enriching educational trips to historical sites, museums, and places of interest.",
+    title: "Picnic",
+    description: "Waterpark picnics that combine fun and learning, fostering camaraderie and exploration in a vibrant outdoor setting.",
     image: eduTrip,
   },
   {
     id: 2,
-    title: "CULTURAL ACTIVITIES",
-    description: "Music, dance, drama, and art events that nurture creativity, stage confidence, and teamwork.",
+    title: "Saraswati Puja",
+    description: "Celebration of knowledge and learning, honoring the goddess of wisdom and education.",
     image: cul,
   },
   {
@@ -27,7 +27,7 @@ const activitiesData = [
   {
     id: 4,
     title: "Pre-PRIMARY ACTIVITIES",
-    description: "Play-based learning, creative exploration, and social development activities designed for our youngest learners.",
+    description: "Engaging activities for pre-primary students that foster creativity, social skills, and early learning in a fun environment.",
     image: pre,
   },
 ];
